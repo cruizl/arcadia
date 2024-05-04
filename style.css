@@ -226,7 +226,11 @@ body {
     .sidebar {
       font-size: 13px;
     }
-  
+
+    .board {
+        position: relative;
+    }
+      
     .sidebar {
       width: 100%;
     }
