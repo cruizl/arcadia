@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.sidebar {
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.header {
+    justify-content: center;
+}
