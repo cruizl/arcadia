@@ -14,7 +14,6 @@
 body {
     margin: 0;
     width: 100%;
-    height: 100vh;
     min-width: 600px;
     display: flex;
     align-items: center;
@@ -40,11 +39,9 @@ h1 {
 .sidebar {
     padding: 2rem;
     width: 50%;
-    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: 15px;
 }
 
@@ -60,38 +57,32 @@ mark {
     background-color: var(--mark-bg);
 }
 
-section {
-    display: block;
-    unicode-bidi: isolate;
+
+
+/* Board */
+
+.view {
+    width: 50%;
+    aspect-ratio: 1 / 1;
 }
 
-#board {
+.board {
     position: sticky;
-    top: 0;
-    width: 50vw;
-    height: 50vw;
+    height: 100%;
+    width: 100%;
     min-width: 300px;
     min-height: 300px;
-    max-width: 100vh;
     max-height: 100vh;
-    background-color: var(--board-bg);
-}
-  
-#pond,
-#background {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 1em;
+    max-width: 100vh;
 }
 
-  
-#pond {
-    z-index: 20;
+.background {
+    background-color: var(--board-bg);
+    height: 100%;
+    width: 100%;
 }
+
+/* Level Indicator */
 
 .tooltip {
     position: absolute;
@@ -248,34 +239,3 @@ section {
     border-left: 11px solid rgba(255, 255, 255, 0.7);;
 }
 
-  /* Queries */
-
-@media only screen and (max-width: 767px) {
-    body {
-      flex-direction: column-reverse;
-      align-items: center;
-      min-width: 100vw;
-      min-height: 100%;
-    }
-
-    #view {
-        min-height: 300px;
-    }
-  
-    body,
-    .sidebar {
-      font-size: 13px;
-    }
-  
-    .sidebar {
-      width: 100%;
-    }
-  
-    .header {
-      justify-content: center;
-    }
-  
-    .level-name {
-      font-size: 2rem;
-    }
-}
