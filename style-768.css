@@ -2,14 +2,23 @@ body {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    min-width: 400px;
+    max-width: 700px;
 }
 
 .sidebar {
     width: 100%;
+    min-width: 400px;
+    max-width: 700px;
     padding-left: 4rem;
     padding-right: 4rem;
 }
 
 .header {
     justify-content: center;
+}
+
+.view {
+    width: 70%;
+    aspect-ratio: 1 / 1;
 }
