@@ -2,7 +2,8 @@ body {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    min-width: 400px;
+    align-items: center;
+    min-width: 500px;
     max-width: 700px;
 }
 
@@ -21,4 +22,6 @@ body {
 .view {
     width: 70%;
     aspect-ratio: 1 / 1;
+    align-self: center;
+    position: relative;
 }
